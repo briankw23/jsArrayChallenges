@@ -1,3 +1,4 @@
+//challenge one
 var input = prompt("Challenge One: Please enter one word followed by a space then another word");
 var inputsplit= input.split(" ");
 var inputsplit1 =inputsplit[0].toLowerCase();
@@ -23,7 +24,7 @@ if (ourArraysum > ourArray2sum){
 } else {
 	document.getElementById('challenge-1').innerHTML= inputsplit2;
 }
-
+//challenge two
 var challengeTwoInputA = [1,2,3,4,5,6,7,8,9];  //[1,2,7,4,5,6,3,8,9];
 var challengeTwoInputB = [12,13,14];  //[12,17,14];
 var challengeTwoInputC = [9,2,4,7,3];  //[9,2,4,3,7];
@@ -41,8 +42,6 @@ for (var i = 0; i < challengeTwoInputA.length; i++){
 }
 document.getElementById('challenge-2-A').innerHTML = twoarray;
 var barray = challengeTwoInputB.splice(1,1,17);
-console.log(barray);
-console.log(challengeTwoInputB);
 document.getElementById('challenge-2-B').innerHTML = challengeTwoInputB;
 var carray = [];
 for (var i = 0; i < challengeTwoInputC.length; i++){
@@ -55,4 +54,40 @@ for (var i = 0; i < challengeTwoInputC.length; i++){
 			else{carray.push(challengeTwoInputC[i])}
 }
 document.getElementById('challenge-2-C').innerHTML = carray;
+
+//challenge 3
+
+var challengeThreeInputA = [ 1, 1, 1, 2, 1, 1 ];  // 2
+var challengeThreeInputB = [ 0, 0, 0, 0, 0, 0, 0, 0.55, 0, 0 ];  // 0.55
+var arrayA1 = [];
+var arrayA2 = [];
+for (var i = 0; i < challengeThreeInputA.length; i++) {
+	if(challengeThreeInputA[0]!=challengeThreeInputA[i]){
+		arrayA1.push(challengeThreeInputA[i]);
+	} else{
+		arrayA2.push(challengeThreeInputA[i]);
+	}
+}
+if (arrayA1.length>arrayA2.length) {
+document.getElementById('challenge-3-A').innerHTML = arrayA2;
+} else {
+document.getElementById('challenge-3-A').innerHTML = arrayA1;
+}
+var arrayB1 = [];
+var arrayB2 = [];
+for (var i = 0; i < challengeThreeInputB.length; i++) {
+	if(challengeThreeInputB[0]!=challengeThreeInputB[i]){
+		arrayB1.push(challengeThreeInputB[i]);
+	} else{
+		arrayB2.push(challengeThreeInputB[i]);
+	}
+}
+if (arrayB1.length>arrayB2.length) {
+document.getElementById('challenge-3-B').innerHTML = arrayB2;
+} else {
+document.getElementById('challenge-3-B').innerHTML = arrayB1;
+}
+
+
+
 
