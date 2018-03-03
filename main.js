@@ -88,6 +88,20 @@ document.getElementById('challenge-3-B').innerHTML = arrayB2;
 document.getElementById('challenge-3-B').innerHTML = arrayB1;
 }
 
+//challenge 4
+
+var challengeFourInputA = [ 1, 2, 3 ];  // [2, 4, 6]
+var challengeFourInputB = [ 3, 8, 1, 2, 4, 12 ];  // [ 6, 16, 2, 4, 8, 24 ]
+var array4a = [];
+for (var i = 0; i < challengeFourInputA.length; i++) {
+	array4a.push(challengeFourInputA[i]*2);
+}
+document.getElementById('challenge-4-A').innerHTML = array4a;
+var array4b = [];
+for (var i = 0; i < challengeFourInputB.length; i++) {
+	array4b.push(challengeFourInputB[i]*2);
+}
+document.getElementById('challenge-4-B').innerHTML = array4b;
 
 
 
