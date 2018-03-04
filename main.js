@@ -103,5 +103,33 @@ for (var i = 0; i < challengeFourInputB.length; i++) {
 }
 document.getElementById('challenge-4-B').innerHTML = array4b;
 
+//challenge 5
 
+var array5a = [1,2];
+var array5b = [1];
+var yes1 =[];
+var no1=[];
+//display = [2]
+
+var array5c = [1,2, 4, 7, 5, 9];
+var array5d = [5, 9, 2];
+var yes2 = [];
+var no2 = [];
+//display = [1, 4, 7]
+for (var i = 0; i < array5a.length; i++) {
+	if(array5b.includes(array5a[i])){
+		yes1.push(array5a[i]);
+	}else {
+		no1.push(array5a[i]);
+	};
+};
+document.getElementById('challenge-5-A').innerHTML = no1;
+for (var i = 0; i < array5c.length; i++) {
+	if(array5d.includes(array5c[i])){
+		yes2.push(array5c[i]);
+	}else {
+		no2.push(array5c[i]);
+	};
+};
+document.getElementById('challenge-5-B').innerHTML = no2;
 
