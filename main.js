@@ -133,3 +133,30 @@ for (var i = 0; i < array5c.length; i++) {
 };
 document.getElementById('challenge-5-B').innerHTML = no2;
 
+//challenge 6
+var test1 = [1,3]; // 2
+var onelength =test1.length + 1;
+var test2 = [2,3,4]; // 1
+var twolength =test2.length + 1;
+var test3 = [13,11,10,3,2,1,4,5,6,9,7,8]; // 12
+var threelength =test3.length + 1;
+var counter1 = 0;
+var counter2 = 0;
+var counter3 = 0;
+var one = 1;
+var two = 2;
+for (var i = 0; i < test1.length; i++) {
+	counter1 += parseInt(test1[i]);
+}
+var test1missing = onelength * ((onelength + one)/two);
+document.getElementById('challenge-6-A').innerHTML = test1missing - counter1;
+for (var i = 0; i < test2.length; i++) {
+	counter2 += parseInt(test2[i]);
+}
+var test2missing = twolength * ((twolength + one)/two);
+document.getElementById('challenge-6-B').innerHTML = test2missing - counter2;
+for (var i = 0; i < test3.length; i++) {
+	counter3 += parseInt(test3[i]);
+}
+var test3missing = threelength * ((threelength + one)/two);
+document.getElementById('challenge-6-C').innerHTML = test3missing -counter3;
